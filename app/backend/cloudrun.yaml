@@ -12,7 +12,7 @@ spec:
         autoscaling.knative.dev/maxScale: '2'
         run.googleapis.com/execution-environment: gen2
         # TODO: change for your own vpc name
-        run.googleapis.com/network-interfaces: '[{"network":"cnsrun-app", "subnetwork":"cnsrun-evocative-entry-425111-f9"}]'
+        run.googleapis.com/network-interfaces: '[{"network":"cnsrun-app", "subnetwork":"black-caster-426211-t0"}]'
         run.googleapis.com/vpc-access-egress: all-traffic
     spec:
       containerConcurrency: 10
