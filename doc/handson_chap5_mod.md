@@ -606,13 +606,13 @@ docker push asia-northeast1-docker.pkg.dev/${GOOGLE_CLOUD_PROJECT}/cnsrun-app/ba
 Cloud Buildのトリガを作成します。
 
 ```bash
-REPO_NAME=$(gcloud beta builds repositories list --connection=cnsrun-app-handson --region=asia-northeast1 --format=json | jq -r .[].name)
+REPO_NAME=$(gcloud beta builds repositories list --connection=cnsrun-app-handson --region=asia-east1 --format=json | jq -r .[].name)
 ```
 
 ```bash
 gcloud beta builds triggers create github \
 --name=cnsrun-backend-trigger \
---region=asia-northeast1 \
+--region=asia-east1 \
 --repository="$REPO_NAME" \
 --branch-pattern=^main$ \
 --build-config=app/backend/cloudbuild_push.yaml \
