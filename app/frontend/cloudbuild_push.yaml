@@ -57,6 +57,6 @@ steps:
 substitutions:
   _SERVICE_NAME: frontend
   _PIPELINE_NAME: cnsrun-frontend
-  _REGION: asia-east1
+  _REGION: asia-northeast1
 
 timeout: 1200s
