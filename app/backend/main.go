@@ -4,10 +4,11 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
-	_ "github.com/lib/pq"
 	"log"
 	"net/http"
 	"os"
+
+	_ "github.com/lib/pq"
 )
 
 type Response struct {
@@ -26,7 +27,7 @@ func main() {
 	http.HandleFunc("/backend", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(r.Referer())
 		username := "backend"
-		body := Response{http.StatusOK, "Hello World, " + username + "!"}
+		body := Response{http.StatusOK, "Hello World, " + username + "!XD"}
 		res, err := json.Marshal(body)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
