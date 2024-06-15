@@ -658,7 +658,7 @@ gcloud iam service-accounts create cnsrun-app-backend --display-name "Service Ac
 
 ```bash
 gcloud builds triggers run cnsrun-backend-trigger \
---region=asia-northeast1 \
+--region=asia-east1 \
 --branch=main
 ```
 
