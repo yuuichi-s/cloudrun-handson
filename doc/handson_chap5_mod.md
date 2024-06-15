@@ -296,7 +296,7 @@ gcloud projects add-iam-policy-binding ${GOOGLE_CLOUD_PROJECT} \
 次に、Cloud Buildの起動対象となる「ソースコードのプッシュ」対象のリポジトリ名を取得します。
 
 ```bash
-REPO_NAME=$(gcloud beta builds repositories list --connection=cnsrun-app-handson --region=asia-heast1 --format=json | jq -r .[].name)
+REPO_NAME=$(gcloud beta builds repositories list --connection=cnsrun-app-handson --region=asia-east1 --format=json | jq -r .[].name)
 ```
 
 最後に、Cloud Buildのトリガを作成します。
