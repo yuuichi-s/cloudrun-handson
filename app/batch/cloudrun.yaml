@@ -8,7 +8,7 @@ spec:
       annotations:
         run.googleapis.com/execution-environment: gen2
         # TODO: change for your own vpc name
-        run.googleapis.com/network-interfaces: '[{"network":"cnsrun-app", "subnetwork":"black-caster-426211-t0"}]'
+        run.googleapis.com/network-interfaces: '[{"network":"cnsrun-app", "subnetwork":"evocative-entry-425111-f9"}]'
         run.googleapis.com/vpc-access-egress: all-traffic
     spec:
       taskCount: 1
@@ -37,4 +37,4 @@ spec:
                 value: "cnsrun"
           maxRetries: 3
           timeoutSeconds: '600'
-          serviceAccountName: cnsrun-app-batch@black-caster-426211-t0.iam.gserviceaccount.com
+          serviceAccountName: cnsrun-app-batch@evocative-entry-425111-f9.iam.gserviceaccount.com
