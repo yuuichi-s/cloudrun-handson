@@ -37,4 +37,4 @@ spec:
                 value: "cnsrun"
           maxRetries: 3
           timeoutSeconds: '600'
-          serviceAccountName: cnsrun-app-batch@evocative-entry-425111-f9.iam.gserviceaccount.com
+          serviceAccountName: cnsrun-app-batch@PROJECT_ID.iam.gserviceaccount.com
