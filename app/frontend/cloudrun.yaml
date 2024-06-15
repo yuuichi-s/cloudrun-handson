@@ -18,7 +18,7 @@ spec:
     spec:
       containerConcurrency: 10
       timeoutSeconds: 300
-      serviceAccountName: cnsrun-app-frontend@evocative-entry-425111-f9.iam.gserviceaccount.com
+      serviceAccountName: cnsrun-app-frontend@PROJECT_ID.iam.gserviceaccount.com
       containers:
       - image: frontend
         env:
